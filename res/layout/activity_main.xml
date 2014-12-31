@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/current_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/title_shape"
+            android:text="1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/total_stay_timemills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/title_shape"
+            android:text="150"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.wutl.pintu.view.GamePintuLayout
+        android:id="@+id/id_gameview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:padding="5dp" >
+
+    </com.wutl.pintu.view.GamePintuLayout>
+
+</RelativeLayout>
